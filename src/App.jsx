@@ -67,13 +67,13 @@ export default function App() {
                                 amount={convertedAmount}
                                 currencyOptions={options}
                                 onCurrencyChange={(currency) => { setTO(currency) }}
-                                selectCurrency={from}
+                                selectCurrency={to}
                                 amountDisable
                             />
                         </div>
 
                         <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
-                            Convert {from.toUpperCase} to {to.toUpperCase}
+                            Convert {from.toUpperCase()} to {to.toUpperCase()}
                         </button>
                     </form>
                 </div>
